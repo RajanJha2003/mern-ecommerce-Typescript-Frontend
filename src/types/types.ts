@@ -1,5 +1,3 @@
-import { ShippingInfoType } from "../../../ecommerce-backend/src/types/user";
-
 export type User = {
   name: string;
   email: string;
@@ -72,7 +70,7 @@ export type OrderItemType = Omit<CartItemType, "stock"> & { _id: string };
 
 export type OrderType = {
   orderItems: OrderItemType[];
-  shippingInfo: ShippingInfoType;
+  shippingInfo: shippingInfoType;
   subtotal: number;
   tax: number;
   shippingCharges: number;

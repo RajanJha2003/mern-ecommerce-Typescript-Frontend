@@ -35,7 +35,8 @@ const Cart = () => {
           setisValidCouponCode(true);
           dispatch(calculatePrice());
         })
-        .catch((err) => {
+        .catch((err: Error) => {
+          console.log(err);
           dispatch(discountApplied(0));
           setisValidCouponCode(false);
           dispatch(calculatePrice());

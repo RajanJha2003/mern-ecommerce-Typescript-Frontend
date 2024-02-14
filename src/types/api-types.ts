@@ -1,4 +1,3 @@
-import { ShippingInfoType } from "./../../../ecommerce-backend/src/types/user";
 import {
   BarType,
   CartItemType,
@@ -8,6 +7,7 @@ import {
   Products,
   StatsType,
   User,
+  shippingInfoType,
 } from "./types";
 
 export type MessageResponse = {
@@ -47,7 +47,7 @@ export type SearchResponse = {
 };
 
 export type NewOrderRequest = {
-  shippingInfo: ShippingInfoType;
+  shippingInfo: shippingInfoType;
   orderItems: CartItemType[];
   subtotal: number;
   tax: number;
