@@ -10,6 +10,7 @@ import {
   TableOptions,
 } from "react-table";
 
+// eslint-disable-next-line @typescript-eslint/ban-types
 function TableHOC<T extends Object>(
   columns: Column<T>[],
   data: T[],
