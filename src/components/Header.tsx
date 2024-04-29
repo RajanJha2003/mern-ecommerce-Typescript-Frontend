@@ -31,6 +31,7 @@ const Header = ({ user }: HeaderPropsTypes) => {
 
   return (
     <nav className="header">
+      <img src="../assets/images/logo.png" alt="logo" />
       <Link to={"/"} onClick={() => setIsOpen(false)}>
         HOME
       </Link>
